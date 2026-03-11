@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'computersetak';
+  src: url('computersetakL.ttf') format('truetype');
+  font-weight: 400;
+}
+
+body {
+  background-color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  font-family: 'computersetak', sans-serif;
+  font-style: normal;
+}
+
+/* 공통 배경 */
+.slide {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  background-color: #dcedf8;
+  overflow: hidden;
+}
+
+.slide img {
+  position: absolute;
+}
+
+.square {
+  position: absolute;
+  border-radius: 20px;
+}
+
+.green-square {
+  background-color: #cbddb2;
+}
+
+.blue-square {
+  background-color: #2e678e;
+}
+
+.slide-title {
+  position: absolute;
+  font-weight: 900;
+  font-family: 'computersetak', sans-serif;
+}
+
+.white {
+  color: white;
+}
+
+.s1-green {
+  left: 170px;
+  top: 100px;
+  width: 750px;
+  height: 540px;
+}
+
+.s1-title {
+  position: absolute;
+  right: 160px;
+  top: 265px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #2e678e;
+  text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+  z-index: 300;
+}
+
+.s1-name {
+  position: relative;
+  left: 500px;
+  top: 355px;
+  font-family: 'computersetak', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  color: #2e678e;
+  text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+  z-index: 300;
+}
+
+.bread {
+  left: -5px;
+  top: 0px;
+  width: 220px;
+}
+
+.macbook {
+  right: 70px;
+  top: 0px;
+  width: 300px;
+}
+.chicken {
+  right: 0px;
+  /* top: 0px; */
+  bottom: -70px;
+  width: 1300px;
+}
+
+.typing-girl {
+  position: relative;
+  right: 30px;
+  bottom: 27px;
+  width: 1085px;
+  z-index: 100;
+}
+
+.s2-green {
+  left: 190px;
+  top: 100px;
+  width: 745px;
+  height: 560px;
+}
+
+.s2-title {
+  position: absolute;
+  left: 500px;
+  top: 180px;
+  font-family: 'computersetak', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  color: #2e678e;
+}
+
+.s2-badges {
+  position: absolute;
+  left: 400px;
+  top: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.badge-row1 {
+  display: flex;
+  padding-left: 80px;
+  gap: 75px;
+  align-items: center;
+}
+
+.badge-row2 {
+  display: flex;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.badge {
+  background-color: #2e678e;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 26px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.face {
+  left: 0px;
+  top: 105px;
+  width: 395px;
+}
+.ramen {
+  right: 15px;
+  top: 10px;
+  width: 180px;
+}
+.tokyo {
+  left: 15px;
+  bottom: 10px;
+  width: 118px;
+}
+
+.chunguma {
+  right: 15px;
+  bottom: -10px;
+  width: 250px;
+}
+
+.s3-blue {
+  left: 85px;
+  top: 60px;
+  width: 800px;
+  height: 550px;
+}
+
+.s3-title {
+  position: absolute;
+  left: 135px;
+  top: 130px;
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+}
+
+.s3-list {
+  position: absolute;
+  left: 130px;
+  top: 250px;
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.9;
+  z-index: 200;
+}
+
+.s3-list li::before {
+  content: '• ';
+}
+
+.cake {
+  left: -8px;
+  top: -7px;
+  width: 180px;
+}
+
+.piano-white {
+  position: absolute;
+  right: -20px;
+  top: 500px;
+  width: 500px;
+  height: 80px;
+  background: white;
+  z-index: 90;
+  border-radius: 30px;
+}
+
+.piano-girl {
+  right: -140px;
+  top: 50px;
+  width: 660px;
+  z-index: 100;
+}
+
+.youtube {
+  position: absolute;
+  background-color: #58585b;
+  border-radius: 20px;
+  padding: 16px 22px;
+  color: white;
+  width: 420px;
+  height: 180px;
+}
+.phone {
+  position: absolute;
+  background-color: #323232;
+  border-radius: 20px;
+  padding: 16px 22px;
+  color: white;
+  width: 440px;
+  height: 200px;
+}
+
+.s3-youtube {
+  left: 10px;
+  bottom: 10px;
+}
+
+.s3-phone {
+  left: 20px;
+  bottom: 20px;
+}
+
+.youtube-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.play-btn {
+  margin-top: 45px;
+  font-size: 40px;
+}
+
+.player-bar {
+  height: 5px;
+  background-color: #555;
+  border-radius: 3px;
+}
+
+.player-progress {
+  height: 100%;
+  width: 38%;
+  background-color: #fb0201;
+  border-radius: 3px;
+}
+
+.s4-blue {
+  left: 60px;
+  top: 70px;
+  width: 880px;
+  height: 630px;
+}
+
+.s4-title {
+  left: 150px;
+  top: 130px;
+  font-size: 58px;
+}
+
+.s4-list {
+  position: absolute;
+  left: 160px;
+  top: 230px;
+  list-style: none;
+  color: white;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.s4-list li::before {
+  content: '• ';
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.book-white {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  width: 270px;
+  height: 110px;
+  background: rgb(247, 247, 245);
+  clip-path: polygon(
+    0% 44%,
+    20% 22%,
+    50% 18%,
+    95% 34%,
+    80% 70%,
+    80% 86%,
+    50% 90%,
+    0% 72%
+  );
+  z-index: 0;
+}
+.study-girl {
+  right: -15px;
+  bottom: 5px;
+  width: 310px;
+}
+
+.code {
+  left: 20px;
+  bottom: 10px;
+  width: 160px;
+}
+
+.s5-blue {
+  left: 110px;
+  top: 80px;
+  width: 800px;
+  height: 600px;
+}
+
+.s5-title {
+  left: 50%;
+  top: 220px;
+  transform: translateX(-50%);
+  font-size: 58px;
+  white-space: nowrap;
+}
+
+.s5-list {
+  position: absolute;
+  left: 50%;
+  top: 320px;
+  transform: translateX(-50%);
+  list-style: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.7;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.s5-list li::before {
+  content: '•   ';
+}
+
+.boss {
+  left: 30px;
+  top: 10px;
+  width: 320px;
+}
+.money {
+  right: 35px;
+  top: 25px;
+  width: 230px;
+}
+.medal {
+  left: 40px;
+  bottom: 35px;
+  width: 250px;
+}
+.building {
+  right: 50px;
+  bottom: 10px;
+  width: 230px;
+}
+
+.s6-green {
+  left: 220px;
+  top: 140px;
+  width: 650px;
+  height: 460px;
+}
+
+.s6-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%, -90%);
+  font-size: 72px;
+  font-weight: 900;
+  color: #2e5f85;
+  white-space: nowrap;
+}
+
+.chunguma2 {
+  left: 10px;
+  top: 180px;
+  width: 350px;
+}
+.thumb {
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  font-size: 170px;
+}
